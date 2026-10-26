@@ -13,11 +13,10 @@ Vault Obsidian ghi chú khi đọc ebook chuyên ngành (từ 2026).
 | `99-ATTACHMENTS/` | Ảnh dán vào note |
 
 ## Quy ước
-- Tên chương: `<mã sách>-NN Tên chương` (graph chỉ hiện tên file, mã sách tránh trùng tên).
-- Chủ đề, năm, trạng thái nằm ở **metadata** của note tổng quan, không chia folder.
-- Mỗi chương 3 tầng: ghi nhanh → tóm tắt bằng lời mình → 1–3 ý tách sang `20-NOTES`.
-- Ôn tập: đặt `review_date` = ngày đọc +3 ngày, +2 tuần, +2 tháng; xem `30-MAPS/Can-on`.
-- Cần áp dụng vào việc thật: đặt `apply_status: todo` + ghi `apply:`.
+- Tên chương: `<mã sách>-NN Tên chương` (mã sách tránh trùng tên trong graph).
+- Chủ đề, năm, trạng thái nằm ở metadata của note tổng quan, không chia folder.
+- Mỗi chương chỉ ghi: **Ý quan trọng** (kèm số trang) + **Tóm lại** (1–2 câu).
+- Ôn tập: điền `review_date`; cần áp dụng: `apply_status: todo` + `apply`.
 - Link trang PDF: `[[Tên sách.pdf#page=12]]`.
 
 ## PDF/epub

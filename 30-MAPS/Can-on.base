@@ -1,7 +1,7 @@
 filters:
   and:
-    - 'type == "chapter"'
-    - 'review_date <= today()'
+    - type == "chapter"
+    - review_date <= today()
 views:
   - type: table
     name: Chương cần ôn hôm nay

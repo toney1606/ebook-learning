@@ -1,7 +1,7 @@
 filters:
   and:
-    - 'type == "chapter"'
-    - 'apply_status == "todo"'
+    - type == "chapter"
+    - apply_status == "todo"
 views:
   - type: table
     name: Việc cần áp dụng

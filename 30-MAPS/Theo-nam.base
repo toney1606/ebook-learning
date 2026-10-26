@@ -1,6 +1,6 @@
 filters:
   and:
-    - 'type == "book"'
+    - type == "book"
 views:
   - type: table
     name: Theo năm
