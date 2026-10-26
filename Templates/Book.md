@@ -1,6 +1,5 @@
 ---
 type: book
-code: 
 author: 
 topic: []
 year: {{date:YYYY}}

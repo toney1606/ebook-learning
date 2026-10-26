@@ -5,22 +5,21 @@ Vault Obsidian ghi chú khi đọc ebook chuyên ngành (từ 2026).
 ## Cấu trúc
 | Folder | Dùng cho |
 |---|---|
-| `00-INBOX/` | Note mới tạo mặc định rơi vào đây; xử lý rồi chuyển đi |
-| `10-BOOKS/<Tên sách>/` | 1 folder = 1 cuốn: note tổng quan (trùng tên folder), `KTW-01 …` mỗi chương 1 note, `source/` chứa PDF/epub |
-| `20-NOTES/` | Ý/khái niệm dùng lại nhiều nơi (chỉ tách khi dùng được ngay hoặc thấy ở ≥2 chỗ) |
-| `30-MAPS/` | Trang tự lọc (`.base`): Đang đọc, Cần ôn, Theo chủ đề, Theo năm, Việc cần áp dụng |
-| `90-TEMPLATES/` | `Book`, `Chapter`, `Note` (Ctrl+P → Insert template) |
-| `99-ATTACHMENTS/` | Ảnh dán vào note |
+| `Inbox/` | Note mới tạo mặc định rơi vào đây, xử lý xong chuyển đi |
+| `Books/<Tên sách>/` | Mỗi cuốn một folder: note tổng quan (trùng tên folder), mỗi chương một note `01 …`, `Files/` chứa PDF/epub |
+| `Notes/` | Ý/khái niệm dùng lại nhiều nơi |
+| `Dashboards/` | Trang tự lọc: Đang đọc, Cần ôn, Theo chủ đề, Theo năm, Cần áp dụng |
+| `Templates/` | `Book`, `Chapter`, `Note` (Ctrl+P → Insert template) |
+| `Attachments/` | Ảnh dán vào note |
 
 ## Quy ước
-- Tên chương: `<mã sách>-NN Tên chương` (mã sách tránh trùng tên trong graph).
-- Chủ đề, năm, trạng thái nằm ở metadata của note tổng quan, không chia folder.
-- Mỗi chương chỉ ghi: **Ý quan trọng** (kèm số trang) + **Tóm lại** (1–2 câu).
-- Ôn tập: điền `review_date`; cần áp dụng: `apply_status: todo` + `apply`.
+- Chương: `NN Tên chương`. Chủ đề, năm, trạng thái nằm ở metadata của note tổng quan, không chia folder.
+- Mỗi chương chỉ ghi **Ý quan trọng** (kèm số trang) và **Tóm lại** (1–2 câu).
+- Ôn tập: điền `review_date`. Cần áp dụng: `apply_status: todo` + `apply`.
 - Link trang PDF: `[[Tên sách.pdf#page=12]]`.
 
 ## PDF/epub
-Không đưa vào git (`.gitignore`). Máy khác tự chép file vào `source/` của sách tương ứng.
+Không đưa vào git (`.gitignore`). Máy khác tự chép file vào `Files/` của sách tương ứng.
 
 ## Đồng bộ giữa các máy
 Plugin **Obsidian Git**: auto pull khi mở vault, auto commit + push mỗi 5–10 phút.
