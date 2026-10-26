@@ -4,6 +4,7 @@ author:
 topic: []
 year: {{date:YYYY}}
 status: queue
+priority: 2
 rating: 
 ---
 

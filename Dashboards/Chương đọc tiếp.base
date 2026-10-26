@@ -1,0 +1,19 @@
+filters:
+  and:
+    - type == "chapter"
+    - status != "done"
+views:
+  - type: table
+    name: Chương đọc tiếp
+    groupBy:
+      property: book
+      direction: ASC
+    order:
+      - file.name
+      - order
+      - priority
+      - pages
+      - status
+    sort:
+      - property: order
+        direction: ASC

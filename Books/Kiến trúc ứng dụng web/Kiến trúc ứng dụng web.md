@@ -4,11 +4,15 @@ author: Huy (Technical Leader)
 topic: [architecture, backend]
 year: 2026
 status: reading
+priority: 1
 rating: 
 ---
 
 > [!abstract] Sách nói về gì (1 câu)
 > Tách code nghiệp vụ (core) khỏi code hạ tầng, đi tới Hexagonal Architecture (Ports & Adapters).
+
+> [!tip] Thứ tự đọc đề xuất
+> 01 → 03 → 04 → 06 → 07 → 08, sau đó 02 (lướt) và 05 (khi cần). Ưu tiên cao: 03, 04, 06, 08.
 
 ## Chương
 - [ ] [[01 Tách core và infrastructure]] (tr.3–8)

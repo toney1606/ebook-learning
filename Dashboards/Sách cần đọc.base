@@ -1,0 +1,17 @@
+filters:
+  and:
+    - type == "book"
+    - or:
+        - status == "queue"
+        - status == "reading"
+views:
+  - type: table
+    name: Sách cần đọc
+    order:
+      - file.name
+      - priority
+      - status
+      - topic
+    sort:
+      - property: priority
+        direction: ASC
