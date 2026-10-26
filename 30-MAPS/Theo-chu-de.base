@@ -1,0 +1,14 @@
+filters:
+  and:
+    - 'type == "book"'
+views:
+  - type: table
+    name: Theo chủ đề
+    groupBy:
+      property: topic
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - status
+      - rating

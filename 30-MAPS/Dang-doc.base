@@ -1,0 +1,11 @@
+filters:
+  and:
+    - 'type == "book"'
+    - 'status == "reading"'
+views:
+  - type: table
+    name: Đang đọc
+    order:
+      - file.name
+      - topic
+      - started

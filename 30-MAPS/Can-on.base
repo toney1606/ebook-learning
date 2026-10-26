@@ -1,0 +1,14 @@
+filters:
+  and:
+    - 'type == "chapter"'
+    - 'review_date <= today()'
+views:
+  - type: table
+    name: Chương cần ôn hôm nay
+    order:
+      - file.name
+      - book
+      - review_date
+    sort:
+      - property: review_date
+        direction: ASC
