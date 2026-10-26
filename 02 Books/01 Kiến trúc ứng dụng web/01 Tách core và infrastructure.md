@@ -12,5 +12,6 @@ apply:
 
 ## Ý quan trọng
 - tr.
+- 
 
 ## Tóm lại
