@@ -1,10 +1,10 @@
 ---
 type: chapter
-book: "[[Kiến trúc ứng dụng web]]"
-pages: 16-21
+book: "[[ ]]"
+pages: 
 status: todo
-priority: 1
-order: 2
+priority: 2
+chapter: 
 review_date: 
 apply_status: none
 apply: 

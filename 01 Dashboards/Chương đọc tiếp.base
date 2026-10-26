@@ -10,10 +10,9 @@ views:
       direction: ASC
     order:
       - file.name
-      - order
       - priority
       - pages
       - status
     sort:
-      - property: order
+      - property: file.name
         direction: ASC

@@ -3,19 +3,24 @@
 Vault Obsidian ghi chú khi đọc ebook chuyên ngành (từ 2026).
 
 ## Cấu trúc
-| Folder              | Dùng cho                                                                                                   |
-| ------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `Inbox/`            | Note mới tạo mặc định rơi vào đây, xử lý xong chuyển đi                                                    |
-| `Books/<Tên sách>/` | Mỗi cuốn một folder: note tổng quan (trùng tên folder), mỗi chương một note `01 …`, `Files/` chứa PDF/epub |
-| `Notes/`            | Ý/khái niệm dùng lại nhiều nơi                                                                             |
-| `Dashboards/`       | Trang tự lọc: Sách cần đọc, Chương đọc tiếp, Cần ôn, Theo chủ đề, Theo năm, Cần áp dụng                                         |
-| `Templates/`        | `Book`, `Chapter`, `Note` (Ctrl+P → Insert template)                                                       |
-| `Attachments/`      | Ảnh dán vào note                                                                                           |
+Số đầu tên folder/file = thứ tự nên mở/đọc.
+
+| Folder | Dùng cho |
+|---|---|
+| `01 Dashboards/` | Trang tự lọc: Sách cần đọc, Chương đọc tiếp, Cần ôn, Theo chủ đề, Theo năm, Cần áp dụng |
+| `02 Books/` | Mỗi cuốn một folder `NN Tên sách` (NN = thứ tự ưu tiên đọc sách) |
+| `03 Notes/` | Ý/khái niệm dùng lại nhiều nơi |
+| `04 Inbox/` | Note mới tạo mặc định rơi vào đây, xử lý xong chuyển đi |
+| `05 Templates/` | `Book`, `Chapter`, `Note` (Ctrl+P → Insert template) |
+| `06 Attachments/` | Ảnh dán vào note |
+
+Trong folder sách: note tổng quan `Tên sách.md`, các chương `NN Tên chương.md` (NN = thứ tự nên đọc, không phải số chương trong sách; số chương sách ghi ở thuộc tính `chapter`), `Files/` chứa PDF/epub.
 
 ## Quy ước
-- Chương: `NN Tên chương`. Chủ đề, năm, trạng thái nằm ở metadata của note tổng quan, không chia folder.
+- Đổi thứ tự đọc = đổi số đầu tên (đổi tên trong Obsidian thì link tự cập nhật).
+- Chủ đề, năm, trạng thái nằm ở metadata của note tổng quan, không chia folder.
 - Mỗi chương chỉ ghi **Ý quan trọng** (kèm số trang) và **Tóm lại** (1–2 câu).
-- Ưu tiên: `priority` 1 (cao) · 2 (vừa) · 3 (thấp). Thứ tự đọc trong một cuốn: `order` 1, 2, 3…
+- Ưu tiên: `priority` 1 (cao) · 2 (vừa) · 3 (thấp).
 - Ôn tập: điền `review_date`. Cần áp dụng: `apply_status: todo` + `apply`.
 - Link trang PDF: `[[Tên sách.pdf#page=12]]`.
 
