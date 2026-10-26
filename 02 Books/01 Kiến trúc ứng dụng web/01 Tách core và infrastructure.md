@@ -9,9 +9,8 @@ review_date:
 apply_status: none
 apply: 
 ---
-
 ## Ý quan trọng
-- tr.
-- 
+Mục tiêu của việc tách biệt code lõi và code hạ tầng là:
+1. Không trộn lẫn giữa
 
 ## Tóm lại
