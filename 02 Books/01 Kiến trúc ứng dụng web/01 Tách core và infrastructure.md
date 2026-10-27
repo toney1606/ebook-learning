@@ -20,8 +20,10 @@ Những vấn đề khi code lõi và code hạ tầng trộn lẫn:
 1. Khó nắm bắt nghiệp vụ 
 2. Phụ thuộc chặt vào công nghệ, khó thay đổi về sau
 3. Khó kiểm thử tự động
-4. 
+4. Không bảo đảm tính nhất quán dữ liệu
+5. Bảo trì khó khăn và dễ lỗi
 
-
+Lợi ích của việc tách biệt core code và infrastructure code
+1. Hỗ trợ phát triển hướng nghiệp vụ - hướng miền (DDD)
 
 ## Tóm lại
