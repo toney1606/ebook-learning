@@ -6,4 +6,5 @@
 .DS_Store
 # PDF/epub nặng: để ngoài repo
 *.pdf
+!02 Books/**/Files/*.pdf
 *.epub
