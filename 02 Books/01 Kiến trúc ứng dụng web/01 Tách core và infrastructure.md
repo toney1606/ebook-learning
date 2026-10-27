@@ -30,6 +30,7 @@ Lợi ích của việc tách biệt core code và infrastructure code
 4. Tăng khả năng tái sử dụng và linh hoạt mở rộng
 5. Dễ bảo trì và nâng cấp framework
 6. Chuẩn hóa kiến túc và thuận lợi cho teamwork
-7. 
 
+Giải pháp tổng quan để tách biệt core code và infrastructure code
+1. Sử dụng Dependency Injection và Inversion of Control
 ## Tóm lại
