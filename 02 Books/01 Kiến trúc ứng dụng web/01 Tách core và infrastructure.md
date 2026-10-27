@@ -25,5 +25,6 @@ Những vấn đề khi code lõi và code hạ tầng trộn lẫn:
 
 Lợi ích của việc tách biệt core code và infrastructure code
 1. Hỗ trợ phát triển hướng nghiệp vụ - hướng miền (DDD)
+2. Dễ dàng phát triển theo hướng kiểm thử (TDD)
 
 ## Tóm lại
