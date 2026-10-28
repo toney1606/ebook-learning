@@ -49,5 +49,7 @@ Giải pháp tổng quan để tách biệt core code và infrastructure code
 	Factory Pattern
 		Tạo ra đối tượng thay vì gọi trực tiếp hàm của Thư viện bên ngoài
 			VD: Dùng Clock Interface thay vì gọi new DateTime() trong core code
+4. Che giấu chi tiết hạ tầng sau các abstract interface
 	
+5. 
 ## Tóm lại
