@@ -38,5 +38,5 @@ Giải pháp tổng quan để tách biệt core code và infrastructure code
 	Tầng application điều phối use case, phối hợp domain với hạ tầng
 	Tầng infrastructure chứa các adapter cụ thể: repo, service send mail, control framework
 	=> Domain không phụ thuộc ai, còn Application và Infrastructure phụ thuộc Domain: Layered Architecture - code core nằm ở trung tâm, hạ tầng ở rìa
-3. 
+3. Áp dụng các mẫu thiết kế hợp lý
 ## Tóm lại
