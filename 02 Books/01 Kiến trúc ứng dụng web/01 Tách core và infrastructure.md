@@ -50,6 +50,6 @@ Giải pháp tổng quan để tách biệt core code và infrastructure code
 		Tạo ra đối tượng thay vì gọi trực tiếp hàm của Thư viện bên ngoài
 			VD: Dùng Clock Interface thay vì gọi new DateTime() trong core code
 4. Che giấu chi tiết hạ tầng sau các abstract interface
-	
+	Tương tác bên ngoài nên đóng gói sau 1 lớp trừu tượng
 5. 
 ## Tóm lại
