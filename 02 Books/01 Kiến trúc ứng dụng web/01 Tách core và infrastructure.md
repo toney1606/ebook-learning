@@ -10,10 +10,11 @@ apply_status: none
 apply:
 ---
 ## Ý quan trọng
+I. Khái niệm
 Mục tiêu của việc tách biệt code lõi và code hạ tầng là:
 1. Không trộn lẫn giữa core code + infrastructure code, điều này sẽ giúp
-	1.1. Tạo ra 1 ranh giới rõ ràng giữa tầng logic nghiệp vụ cốt lõi và phân triển khai kỹ  thuật bên ngoài
-	1.2. Tách biệt giúp xây dựng một nền tảng kỹ thuật vững chắc đến phát triển hướng domain-driven (thiết kế hướng nghiệp vụ) + áp dụng Test First hay TĐ (Test-Driven Development: viết đoạn mã kiểm thử (test) trước khi viết mã tính năng thực tế.)
+	- Tạo ra 1 ranh giới rõ ràng giữa tầng logic nghiệp vụ cốt lõi và phân triển khai kỹ  thuật bên ngoài
+	- Tách biệt giúp xây dựng một nền tảng kỹ thuật vững chắc đến phát triển hướng domain-driven (thiết kế hướng nghiệp vụ) + áp dụng Test First hay TĐ (Test-Driven Development: viết đoạn mã kiểm thử (test) trước khi viết mã tính năng thực tế.)
 2. Hướng tới mã nguồn trong sáng, dễ đọc, và một kiến trúc linh hoạt sẵn sàng cho những thay đổi trong tương lai
 
 Những vấn đề khi code lõi và code hạ tầng trộn lẫn:
@@ -34,22 +35,60 @@ Lợi ích của việc tách biệt core code và infrastructure code
 Giải pháp tổng quan để tách biệt core code và infrastructure code
 1. Sử dụng Dependency Injection và Inversion of Control
 2. Phân tầng kiến trúc rõ ràng
-	Tầng domain chứa các Entity, Value Object, Domain Service
-	Tầng application điều phối use case, phối hợp domain với hạ tầng
-	Tầng infrastructure chứa các adapter cụ thể: repo, service send mail, control framework
-	=> Domain không phụ thuộc ai, còn Application và Infrastructure phụ thuộc Domain: Layered Architecture - code core nằm ở trung tâm, hạ tầng ở rìa
+	- Tầng domain chứa các Entity, Value Object, Domain Service
+	- Tầng application điều phối use case, phối hợp domain với hạ tầng
+	- Tầng infrastructure chứa các adapter cụ thể: repo, service send mail, control framework
+		=> Domain không phụ thuộc ai, còn Application và Infrastructure phụ thuộc Domain: Layered Architecture - code core nằm ở trung tâm, hạ tầng ở rìa
 3. Áp dụng các mẫu thiết kế hợp lý
-	Repository Pattern: 
+	- Repository Pattern: 
 		Trừu tượng hóa truy xuất và lưu trữ dữ liệu domain
 		Ngăn cách giữa domain và DB
-	Domain Model
+	- Domain Model
 		Tập trung logic nghiệp vụ vào object Domain
-	Dependency Injection
+	- Dependency Injection
 		Cấu hình các phụ thuộc
-	Factory Pattern
+	- Factory Pattern
 		Tạo ra đối tượng thay vì gọi trực tiếp hàm của Thư viện bên ngoài
 			VD: Dùng Clock Interface thay vì gọi new DateTime() trong core code
 4. Che giấu chi tiết hạ tầng sau các abstract interface
-	Tương tác bên ngoài nên đóng gói sau 1 lớp trừu tượng
-5. 
+	- Tương tác bên ngoài nên đóng gói sau 1 lớp trừu tượng
+5. Tách riêng phần đặc thù của framework
+	- Càng ít code Laravel xuất hiện trong logic domain thì càng tốt
+	- Các Facade hay Helper toàn cục của Laravel không nên được gọi trực tiếp trong core code
+
+Giải pháp là tạo một ranh giới rõ ràng (boundary) giữa ứng dụng của ta và thế giới bên ngoài (Bao gồm: Framework, CSDL, Hệ thống khác, Dịch vụ khác, v.v).
+Phần code giao tiếp qua lại với ranh giới đó là infrastructre code  - phải giữ nó tách khỏi logic bên trong.
+
+II. Định nghĩa Core code và Infrastructure code
+1. Core code là gì?
+	+ Là phần code có thẻ chạy được trong bất kỳ context nào mà không cần bất kỳ hệ thống bên ngoài nào hay môi trường đặc biệt nào hỗ trợ
+	- Hay có thể nói: Core code hoàn toàn độc lập với CSDL, network, file system, hay framework.
+	- Nếu 1 đoạn code có thể đưa vào script PHP độc lập, chạy thành công chỉ với CPU thì đó có khả năng là core code
+	1.1. Quy tắc 1
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Tóm lại
