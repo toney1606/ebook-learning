@@ -61,11 +61,17 @@ Phần code giao tiếp qua lại với ranh giới đó là infrastructre code 
 
 II. Định nghĩa Core code và Infrastructure code
 1. Core code là gì?
-	+ Là phần code có thẻ chạy được trong bất kỳ context nào mà không cần bất kỳ hệ thống bên ngoài nào hay môi trường đặc biệt nào hỗ trợ
+	+ Là phần code có thẻ chạy được trong bất kỳ context nào mà không cần bất kỳ hệ thống bên ngoài nào hay môi trường đặc biệt nào hỗ trợ.
 	- Hay có thể nói: Core code hoàn toàn độc lập với CSDL, network, file system, hay framework.
-	- Nếu 1 đoạn code có thể đưa vào script PHP độc lập, chạy thành công chỉ với CPU thì đó có khả năng là core code
+	- Nếu 1 đoạn code có thể đưa vào script PHP độc lập, chạy thành công chỉ với CPU thì đó có khả năng là core code.
 	1.1. Quy tắc 1
-	- 
+	- Không phụ thuộc trực tiếp vào các hệ thống bên ngoài. Không nhất thiết là không sử dụng bất kỳ abstraction nào, nó vẫn có thể gọi các Interface, miễn là Interface đó không nói cụ thể về hệ thống bên ngoài.
+	1.2. Quy tắc 2
+	- Không cần ecosystem, có thể chạy đoạn core code ngay ở CLI, không cần phải dựa vào container hoặc môi trường nào đặc biệt cả.
+	1.3. Các ví dụ về core code: 
+	- Một hàm tính toán thuế VAT từ giá sản phẩm (Input giá sản phẩm, )
+	- Một phương thức của đối tượng domain ($order->calculateTotalAmount)
+	- Một lớp OrderService
 
 
 
