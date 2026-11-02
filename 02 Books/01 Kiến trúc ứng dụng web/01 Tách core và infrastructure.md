@@ -71,7 +71,19 @@ II. Định nghĩa Core code và Infrastructure code
 	1.3. Các ví dụ về core code: 
 	- Một hàm tính toán thuế VAT từ giá sản phẩm (Input giá sản phẩm, )
 	- Một phương thức của đối tượng domain ($order->calculateTotalAmount)
-	- Một lớp OrderService
+	- Một lớp OrderService nếu chỉ thao tác trên domain model và gọi Interface không chạm tới database hay request thì cũng có thể coi OrderService là core code
+	1.4. Core code còn có đặc trưng là di động: Tái sử dụng core code trong các buổi cảnh khác nhau
+	
+2. Infrastructure code là gì?
+	- Lả phần code mà muốn chạy được thì phải có cái gì đó bên ngoài hỗ trợ:
+		+ Connect tới 1 hệ thống khác
+		+ Chạy trong 1 môi trường đặc thù
+		Thường là code truy vấn, thao tác CSDL, tương tác với hệ thống file (đọc, ghi), code gửi email, message, code ghi log ra hệ thống ngoài, also code thuộc về framework (VD: controller, model của framework nếu gắn liền với ORM).
+	- Cách nhận biết:
+		- Nhìn vào code và thấy nó chứa chi tiết kỹ thuật về bên ngoài (VD: Chuỗi DSN kết nối DB, tên bảng, câu lệnh SQL, đường dẫn URL gọi API, tên file, query HTTP request, v.v)
+	1.1 VD:
+	- Bất kỳ đoạn code nào thực hiện truy vấn SQL hoặc thao tác ORM
+	- 
 
 
 
