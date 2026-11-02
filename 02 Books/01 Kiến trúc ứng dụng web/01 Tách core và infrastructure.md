@@ -85,8 +85,8 @@ II. Định nghĩa Core code và Infrastructure code
 	- Bất kỳ đoạn code nào thực hiện truy vấn SQL hoặc thao tác ORM
 	- Code gọi API ngoài
 	- Đoạn code đọc ghi file, gửi mail
-	- 
-
+	1.2. Infrastructure code có thể được thu gọn ảnh hưởng bằng cách dùng adapter
+	- Core code không nhận ra sự tồn tại của hạ tầng bằng lớp Interface
 
 
 
