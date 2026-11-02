@@ -83,6 +83,8 @@ II. Định nghĩa Core code và Infrastructure code
 		- Nhìn vào code và thấy nó chứa chi tiết kỹ thuật về bên ngoài (VD: Chuỗi DSN kết nối DB, tên bảng, câu lệnh SQL, đường dẫn URL gọi API, tên file, query HTTP request, v.v)
 	1.1 VD:
 	- Bất kỳ đoạn code nào thực hiện truy vấn SQL hoặc thao tác ORM
+	- Code gọi API ngoài
+	- Đoạn code đọc ghi file, gửi mail
 	- 
 
 
